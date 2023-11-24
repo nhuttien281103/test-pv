@@ -1,0 +1,107 @@
+footer {
+  background-color: var(--black-color);
+  margin-top: 70px;
+
+  .widget {
+    padding: 50px 0px;
+
+    &__image {
+      width: 250px;
+      margin-top: 30px;
+
+      @include tablet {
+        width: 210px;
+      }
+    }
+
+    &__title {
+      color: var(--white-color);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25.2px;
+      margin: 10px 0px;
+    }
+
+    & p {
+      color: #cccccc;
+      font-size: 15px;
+      line-height: 25.5px;
+      padding: 7.5px 0px;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .icons__service {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+
+    &-box {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white-color);
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid var(--text-color);
+    margin: 0px 50px;
+
+    @include tablet {
+      margin: 0;
+    }
+
+    @include mobile {
+      margin: 0px 20px;
+    }
+
+    .inner__bottom {
+      margin: 0px 90px;
+      padding: 30px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #cccccc;
+
+      @include tablet {
+        margin: 0;
+        padding: 20px 0;
+      }
+
+      @include mobile {
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: flex-start;
+      }
+
+      &-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        @include tablet {
+          gap: 16px;
+          margin: 10px 0px;
+        }
+      }
+
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .css-a5rdam-MuiGrid-root > .MuiGrid-item {
+    padding-top: 0;
+  }
+}

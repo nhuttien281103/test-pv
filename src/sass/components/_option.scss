@@ -1,0 +1,28 @@
+.option {
+  cursor: pointer;
+  position: fixed;
+  top: 150px;
+  right: -2px;
+  background: var(--white-color);
+  border-right: 0;
+  width: 40px;
+  height: auto;
+  padding: 17px 0;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 9;
+
+  i {
+    font-size: 15px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}

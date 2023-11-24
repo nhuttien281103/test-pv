@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/home";
+@import "./components/option";
+@import "./components/heading";
+@import "./components/tour-popular";
+@import "./components/service";
+@import "./components/card-articles";
+@import "./components/card-trips";
+
+//! mui
+@import "./mui/customInputMui";
+@import "./mui/customButtonMui";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.text-white {
+  color: var(--white-color);
+}
+.mt-70 {
+  margin-top: 70px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.container {
+  $marginX: 173px;
+  margin: 0px $marginX;
+  width: calc(100% - ($marginX * 2));
+
+  @include tablet {
+    $marginX: 20px;
+    margin: 0px $marginX;
+    width: calc(100% - ($marginX * 2));
+  }
+}
+
+img {
+  width: 100%;
+}
