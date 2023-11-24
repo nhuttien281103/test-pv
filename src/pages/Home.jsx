@@ -12,8 +12,17 @@ import {
 import { video } from "../assets";
 import { popularData, serviceData } from "../utils/dummy";
 import { Autocomplete, Button, Grid, TextField } from "@mui/material";
+import styled from "@emotion/styled";
 
 const options = ["Option 1", "Option 2"];
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: "#fff",
+  backgroundColor: "#FF4A52",
+  paddingTop: "8px",
+  paddingBottom: "8px",
+  width: "100%",
+}));
 
 const Home = () => {
   const [value, setValue] = React.useState(options[0]);
@@ -91,7 +100,7 @@ const Home = () => {
                 />
               </Grid>
               <Grid item xs={12} sm={3} md={3}>
-                <Button variant="contained">Search</Button>
+                <ColorButton variant="contained">Search</ColorButton>
               </Grid>
               {showInput && (
                 <>
