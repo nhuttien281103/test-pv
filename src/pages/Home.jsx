@@ -156,7 +156,7 @@ const Home = () => {
               )}
             </Grid>
           </form>
-          <div style={{ textAlign: "left", marginTop: "12px" }}>
+          <div className="wrapper__show">
             <span
               className="show__input"
               onClick={() => setShowInput(!showInput)}
